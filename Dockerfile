@@ -5,10 +5,10 @@ FROM node:22-alpine
 WORKDIR /app
 
 # Instala o bash
-RUN apk add --no-cache bash git
+RUN apk add --no-cache bash git vim
 
-# Instala o nodemon e o nestjs-cli globalmente
-RUN npm install -g nodemon @nestjs/cli
+# Instala o nestjs-cli globalmente
+RUN npm install -g @nestjs/cli
 
 # Expõe a porta da aplicação
 EXPOSE 3000

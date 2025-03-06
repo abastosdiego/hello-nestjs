@@ -15,6 +15,8 @@ if [ "$INSTALL_NODE_MODULES" = "true" ]; then
     npm install
 fi
 
-# Inicia a aplicação com Nodemon
+chmod -R 777 .
+
 echo "🚀 Iniciando servidor NestJS..."
-exec nodemon --legacy-watch --exec "ts-node -r tsconfig-paths/register" src/main.ts
+#exec nodemon --legacy-watch --exec "ts-node -r tsconfig-paths/register" src/main.ts
+exec npm run start:dev
