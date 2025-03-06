@@ -8,7 +8,7 @@ WORKDIR /app
 RUN apk add --no-cache bash git vim
 
 # Instala o nestjs-cli globalmente
-RUN npm install -g @nestjs/cli
+RUN npm install -g @nestjs/cli nodemon
 
 # Expõe a porta da aplicação
 EXPOSE 3000
